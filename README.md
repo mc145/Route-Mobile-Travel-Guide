@@ -1,7 +1,7 @@
-# Route-Mobile-Clothing-Recommender-
-Prototype of clothing recommendation idea for Route Mobile Hackathon.
+# Route-Mobile-Travel-Guide-
+Prototype of travel guide idea for Route Mobile Hackathon.
 
 #Contents-
 
-Clothing Recommender front end and back end code.
+Travel guide front end and back end code.
 Designs and documentation of our idea.
