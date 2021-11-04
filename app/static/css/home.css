@@ -1,0 +1,57 @@
+body{
+    margin: 0; 
+    padding: 0; 
+}
+
+.navbar-container{
+    width: 100%; 
+}
+
+#navbar-text{
+    position: absolute; 
+    margin-top: 1.4vh; 
+    left: 70px; 
+    font-family: 'Open Sans', sans-serif;
+}
+
+#navbar-signup{
+    margin-right: 30px; 
+    border: 2px black solid; 
+    padding: 8px; 
+}
+
+#navbar-login{
+    border: 2px black solid; 
+    padding: 8px; 
+}
+
+.navbar-container, a{
+    text-decoration: none; 
+    color: black; 
+    float: right; 
+    margin-left: 30px; 
+    margin-top: 5px; 
+    padding-top: 5px; 
+    font-size: 1.2vw;     
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+#navbar-logo{ 
+    width: 3%;
+    position: absolute; 
+    left: 10px; 
+}
+
+#navbar-seperator{  
+    position: relative; 
+    width: 100%; 
+    top: 20px; 
+}
+
+.navbar-container a:hover{
+    color: blue ; 
+}
+
+
+
