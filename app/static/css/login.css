@@ -23,7 +23,7 @@ body{
     padding: 8px; 
 }
 
-#navbar-login{
+#navbar-home{
     border: 2px black solid; 
     padding: 8px; 
     border-radius: 4px;  
@@ -58,59 +58,31 @@ body{
     color: grey;  
 }
 
-#welcome-text{
-    position: relative; 
-    top: 50px; 
-    font-family: 'Lato', sans-serif;
-    font-size: 3em; 
-}
-
-#explain-text{
-    font-family: 'Open Sans', sans-serif; 
-    inline-size: 40vw;
-    margin-left: 30vw; 
-    margin-top: 9vh;     
-}
-
-.body-container{
-    text-align: center; 
-}
-
-
-
-#body-signup{
-    border: black 2px solid; 
+.login-form input{ 
+    border-radius: 10px; 
+    width: 20vw; 
+    height: 3vh; 
     padding: 10px; 
-    margin: 0; 
-    text-align: center;
-    margin-right: 45vw; 
-    margin-top: 10px;  
-    color: black; 
+    border: thin solid gray; 
 }
 
-#body-signup:hover{
-    color: blue; 
+#submit{
+    width: 9vw; 
+    height: 6vh; 
+    background-color: #f8f8ff; 
+    border-radius: 2px;
 }
 
-.footer-container{
-    position: absolute; 
-    bottom: 0; 
-    width: 100%; 
-    height: 10vh; 
-    background-color: rgb(89,89,89); 
-}
-
-.footer-container a {
-    color: white; 
-    font-family: 'Open Sans', sans-serif; 
-    margin-right: 2vw; 
-    margin-top: 2.5vh; 
-}
-
-.footer-container a:hover{
-    color: lightblue; 
+#submit:hover{
+    background-color: #dcdce6; 
 }
 
 
+.form-container{
+    position: relative; 
+    top: 40px; 
+    left: 40px;  
+
+}
 
 

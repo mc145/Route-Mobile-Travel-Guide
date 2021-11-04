@@ -5,7 +5,7 @@ url = "https://rapidapi.rmlconnect.net/wbm/v1/message"
 
 payload = json.dumps({
   "phone": "+6594893908",
-  "text": "nope",
+  "text": "hello akshay",
 })
 headers = {
   'Content-Type': 'application/json',
