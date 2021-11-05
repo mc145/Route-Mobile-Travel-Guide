@@ -28,8 +28,11 @@ loginForm.addEventListener('submit', (event) => {
     .then(response => response.json())
     .then(loginResponse => {
         statusCode = loginResponse.code; 
-        if(statusCode == 1){
-            document.location.href = `http://localhost:5000/?auth=${loginResponse.message}`;  
-        }
+        if(statusCode == 1){  
+            
+            window.location.href = `/?auth=${loginResponse.message}`; 
+        
+        } 
+
     }); 
 }); 

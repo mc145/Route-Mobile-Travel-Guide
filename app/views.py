@@ -8,7 +8,9 @@ import sqlite3
 def index():
     if request.method == 'GET': 
         auth = request.args.get('auth', default='*', type = str) 
-        print(auth) 
+        print("AUTH", auth) 
+        if(auth == 'abc123'):
+            return render_template('logged.html') 
         return render_template('home.html')
 
 
