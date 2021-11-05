@@ -15,7 +15,7 @@ body{
     color: black; 
 }
 
-#navbar-signup{
+#navbar-login{
     margin-right: 30px; 
     border: 2px black solid; 
     background-color: rgb(12, 12, 182); 
@@ -58,7 +58,7 @@ body{
     color: grey;  
 }
 
-.login-form input{ 
+.signup-form input{ 
     border-radius: 10px; 
     width: 20vw; 
     height: 3vh; 
@@ -107,7 +107,7 @@ body{
 
 
 .alert-container{
-    background-color: red; 
+    background-color: lightgreen; 
     width: 20%; 
     margin-top: 9vh; 
     margin-left: 40px; 

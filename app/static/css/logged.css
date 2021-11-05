@@ -23,7 +23,7 @@ body{
     padding: 8px; 
 }
 
-#navbar-home{
+#navbar-login{
     border: 2px black solid; 
     padding: 8px; 
     border-radius: 4px;  
@@ -58,32 +58,9 @@ body{
     color: grey;  
 }
 
-.login-form input{ 
-    border-radius: 10px; 
-    width: 20vw; 
-    height: 3vh; 
-    padding: 10px; 
-    border: thin solid gray; 
-}
-
-#submit{
-    width: 9vw; 
-    height: 6vh; 
-    background-color: #f8f8ff; 
-    border-radius: 2px;
-}
-
-#submit:hover{
-    background-color: #dcdce6; 
-}
 
 
-.form-container{
-    position: relative; 
-    top: 40px; 
-    left: 40px;  
 
-}
 
 
 .footer-container{
@@ -103,18 +80,4 @@ body{
 
 .footer-container a:hover{
     color: lightblue; 
-}
-
-
-.alert-container{
-    background-color: red; 
-    width: 20%; 
-    margin-top: 9vh; 
-    margin-left: 40px; 
-    height: 30px;
-    opacity: 0%;  
-}
-
-#alert-message{
-    padding: 5px; 
 }

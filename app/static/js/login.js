@@ -1,4 +1,6 @@
-let loginForm = document.querySelector('form'); 
+let loginForm = document.querySelector('form');
+let alertContainer = document.getElementById('alert-container'); 
+let alertMessage = document.getElementById('alert-message');  
 
 let API_URL = 'http://localhost:5000/login'; 
 
@@ -33,6 +35,11 @@ loginForm.addEventListener('submit', (event) => {
             window.location.href = `/?auth=${loginResponse.message}`; 
         
         } 
+
+        else{
+            alertMessage.innerHTML = loginResponse.message; 
+            alertContainer.style.opacity = '100'; 
+        }
 
     }); 
 }); 
