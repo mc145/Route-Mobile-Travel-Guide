@@ -25,8 +25,14 @@ def account():
         gender = request.get_json()['gender'] 
         age = request.get_json()['age'] 
         religion = request.get_json()['religion'] 
-        
-            
+
+        if(add_user_info(nationality, gender, age, religion, request.get_json()['password'])):
+            print("YES") 
+        else: 
+            print("NO") 
+
+
+
     return render_template('home.html') 
 
 
@@ -95,7 +101,7 @@ def check_if_user_exists(email, password):
         cursor = connection.cursor() 
         cursor.execute("SELECT * FROM users WHERE email = ?", (email,))
         existing_email = cursor.fetchone() 
-        if existing_email and existing_email[-1] == password: 
+        if existing_email and existing_email[-5] == password: 
             return True 
         return False 
 
@@ -109,3 +115,13 @@ def check_if_auth_exists(auth):
         else:
             return False 
     
+
+def add_user_info(nationality, gender, age, religion, password): 
+    with sqlite3.connect("C:/Users/Akshay Agarwal/Desktop/Route-Mobile-Travel-Guide/app/users.db") as connection: 
+        cursor = connection.cursor() 
+        cursor.execute("""
+        UPDATE users
+        SET nationality=?, gender=?, age=?, religion=?
+        WHERE password=?;
+        """, (nationality, gender, age, religion, password))
+        return True 

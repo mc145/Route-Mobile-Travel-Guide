@@ -8,13 +8,19 @@ def drop_table():
     return True 
 
 
+
+
 def create_db():
     with sqlite3.connect('users.db') as connection: 
         c = connection.cursor() 
         table = """CREATE TABLE users(
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             email TEXT NOT NULL,
-            password TEXT NOT NULL
+            password TEXT NOT NULL,
+            nationality TEXT, 
+            gender TEXT,
+            age INTEGER, 
+            religion TEXT
             );
             """
         c.execute(table) 

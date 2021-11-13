@@ -13,10 +13,10 @@ if(param == 'auth'){
 submitForm.addEventListener('submit', (event) =>{
     event.preventDefault(); 
     const userData = new FormData(submitForm);
-    let nationality = userData.get('nationality'); 
-    let gender = userData.get('gender'); 
-    let age = userData.get('age'); 
-    let religion = userData.get('religion'); 
+    let nationality = userData.get('nationality').trim(); 
+    let gender = userData.get('gender').trim(); 
+    let age = userData.get('age').trim(); 
+    let religion = userData.get('religion').trim(); 
 
 
     submitForm.reset();
@@ -25,7 +25,8 @@ submitForm.addEventListener('submit', (event) =>{
         'nationality': nationality, 
         'gender': gender, 
         'age': age, 
-        'religion': religion 
+        'religion': religion,  
+        'password': val 
     }; 
 
     fetch(API_URL, {
