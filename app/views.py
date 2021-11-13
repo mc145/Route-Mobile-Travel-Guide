@@ -36,6 +36,15 @@ def account():
     return render_template('home.html') 
 
 
+@app.route('/trip', methods=['GET', 'POST'])
+def trip():
+    auth = request.args.get('auth', default='*', type=str) 
+    if(check_if_auth_exists(auth)):
+        return render_template('trip.html')
+    
+    return render_template('home.html') 
+
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST': 

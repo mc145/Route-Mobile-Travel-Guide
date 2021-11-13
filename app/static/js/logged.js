@@ -15,3 +15,8 @@ function goToAccount(){
     window.location.href = '/account?auth=' + val; 
     return;  
 }
+
+
+function newTrip(){
+    window.location.href = '/trip?auth=' + val; 
+}

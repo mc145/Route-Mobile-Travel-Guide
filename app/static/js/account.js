@@ -1,7 +1,8 @@
 let param = window.location.search.split('=')[0].split('?')[1]; 
 let val = window.location.search.split('=')[1]; 
 
-let submitForm = document.querySelector('form');  
+let submitForm = document.querySelector('form'); 
+let homeButton = document.getElementById('navbar-home');  
 let API_URL = 'http://localhost:5000/account';  
 
 
@@ -9,6 +10,8 @@ if(param == 'auth'){
     window.history.replaceState({}, null, '/account'); 
 
 }
+
+
 
 submitForm.addEventListener('submit', (event) =>{
     event.preventDefault(); 
@@ -37,3 +40,8 @@ submitForm.addEventListener('submit', (event) =>{
         }        
     }); 
 }); 
+
+
+function goToHome(){
+    window.location.href = `/?auth=${val}`; 
+}

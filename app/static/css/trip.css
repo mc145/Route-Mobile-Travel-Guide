@@ -61,19 +61,6 @@ body{
 }
 
 
-#new-trip{
-    text-decoration-style: none; 
-    color: blue; 
-    font-size: 1.5em; 
-    border: 2px black solid; 
-    margin-right: 40vw; 
-    margin-top: 40px; 
-}
-
-#new-trip:hover{
-    color:rgb(12, 12, 182); 
-}
-
 
 
 
