@@ -13,6 +13,23 @@ def index():
         return render_template('home.html')
 
 
+@app.route('/account', methods=['GET', 'POST']) 
+def account(): 
+
+    auth = request.args.get('auth', default='*', type=str) 
+    if(check_if_auth_exists(auth)): 
+        return render_template('account.html') 
+
+    if request.method == 'POST': 
+        nationality = request.get_json()['nationality'] 
+        gender = request.get_json()['gender'] 
+        age = request.get_json()['age'] 
+        religion = request.get_json()['religion'] 
+        
+            
+    return render_template('home.html') 
+
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST': 

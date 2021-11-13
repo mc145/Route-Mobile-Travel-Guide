@@ -4,7 +4,7 @@
 
 <head> 
     <title> Welcome to TGuide</title> 
-    <link rel="stylesheet" href="../static/css/logged.css"> 
+    <link rel="stylesheet" href="../static/css/account.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
@@ -20,10 +20,21 @@
         <img id="navbar-logo" src="../static/assets/travelwebsitelogo.png">
         <h1 id="navbar-text"> TGuide </h1> 
         <a id="navbar-logout" href="/"> Logout </a>
-        <a id="navbar-account"> Account</a> 
+        <a id="navbar-home"> Home</a> 
         <hr id="navbar-seperator"> 
     </div> 
 
+
+    <div class="form-container"> 
+        <form action="" class="user-form"> 
+            <input id="nationality" type="text" name="nationality" placeholder="Nationality"> 
+            <input id="gender" type="text" name="gender" placeholder="Gender"> 
+            <input id="age" type="text" name="age" placeholder="Age"> 
+            <input id="religion" type="text" name="religion" placeholder="Religion"> 
+            <input id="submit" type="submit" value="submit">  
+            
+        </form> 
+    </div>
 
 
     <div class="footer-container"> 
@@ -32,6 +43,7 @@
         
     </div>
 
+    <script src="../static/js/account.js"> </script> 
+
     
-    <script src="../static/js/logged.js"> </script> 
 </body>
