@@ -1,50 +1,100 @@
-<!DOCTYPE html> 
-<html> 
+<!DOCTYPE html>
 
-<head> 
+<html>
 
-<title> Sign Up for TGuide! </title>
-<link rel="stylesheet" href="../static/css/signup.css"> 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<head>
+	<title>TGuide-Signup</title>
+	<link rel="icon" href="../assets/logoicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorgin>
+	<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Varela+Round&display=swap" rel="styelsheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Varela+Round&display=swap" rel="styelsheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="styelsheet">
+	<link rel="stylesheet" href="../css/signup.css">
+	<script src="../javascript/system.js"></script>
+	<script src="../javascript/jquery-3.6.0.js"></script>
 
+</head>
 
-</head> 
+<body>
 
-<body> 
-    <div class="navbar-container"> 
-        <img id="navbar-logo" src="../static/assets/travelwebsitelogo.png">
-        <h1 id="navbar-text"> TGuide </h1> 
-        <a id="navbar-login"href="/login"> Login </a>
-        <a id="navbar-home" href="/"> Home </a> 
-        <hr id="navbar-seperator"> 
-    </div> 
+	<div class="signinbox-wrapper">
+                <img id="icon" src="../assets/logoicon.png">
+                <span id="signuptitle">Sign Up</span>
+                <input type="email" id="mail" name="mail" placeholder="Email"><br><br>
+                <input type="text" id="phonenum" name="phonenum" placeholder="Phone Number"><br><br>
+                <input type="text" id="usrname" name="usrname" placeholder="Username"><br><br>
+                <input type="password" id="password" name="password" placeholder="Password"><br><br><!--minlength="5"-->
+                <input type="password" id="confpas" name="confpas" placeholder="Retype Password"><br><br>
+                <button id="submit" value="submit" onclick="window.location.href='../html/menu.html'">Next</button>
+                <a id="haveacc" href="../html/login.html">Already have an account? Log in</a>
+	</div>
 
-    <div class="form-container"> 
-        <form action="" class="signup-form"> 
-            <input id="email" type="text" name="email" placeholder="Email"> 
-            <input id="password" type="text" name="password" placeholder="Password"> 
-            <input id="submit" type="submit" value="Submit"> 
-            
-        </form> 
-    </div> 
+	<!--<div class="signinbox-wrapper2">
+		<span id="geninfo">General Information</span>
+		<p id="geninfodescr">Below, enter general information about you. Putting your information down lets us give you more personalized recommendations.</p>
+		<input type="text" id="fname" name="fname" placeholder="Full name"> 
+		<select name="gender">
+			<option value="gender1">Male</option>
+			<option value="gender2">Female</option>
+			<option value="gender3">Other</option>
+		</select>
+		<select name="usrage">
+			<option value="age1">Under 18</option>
+			<option value="age2">18-34</option>
+			<option value="age3">35-50</option>
+			<option value="age4">51-69</option>
+			<option value="age5">70-87</option>
+			<option value="age6">Above 87</option>
+		</select>
+		<input type="text" id="usrnatio" name="usrnatio" placeholder="Nationality">
+		<select name="usrregi">
+			<option value="europe">Europe</option>
+			<option value="asia">Asia</option>
+			<option value="namerica">North America</option> 
+			<option value="Africa">Africa</option>
+			<option value="samerica">South America</option>
+			<option value="casia">Central Asia</option>
+			<option value="ocean">Oceania</option>
+			<option value="america">Americas</option>
+			<option value="meast">Middle East</option>
+			<option value="carib">Caribbean</option>
+			<option value="nafrica">North Africa</option>
+			<option value="eeuro">East Europe</option>
+			<option value="weuro">West Europe</option>
+			<option value="camerica">Central America</option>
+			<option value="nnamerica">Northern America</option>
+			<option value="otherregi">Other</option>
+		</select>
+		<button id="next2">Next</button>
+	</div>
 
-    <div class="alert-container" id="alert-container"> 
-        <p id="alert-message">Account created!</p> 
-    </div> 
+	<div class="signinbox-wrapper3">
+		<span id="perinfo">Personalized Information</span>
+		<p id="perinfodescr">Below, enter some more information so we can finalize your profile and give you recommendations that best fit you.</p>
+		<input type="text" id="lastcount" name="lastcount" placeholder="Last country that you have visited">
+		<input type="text" id="lastplac" name="lastplac" placeholder="Last place that you have visited">
+		<label for="placrate">Place Rating:</label><br>
+		<select name="placrate">
+			<option value="rate1">1</option>
+			<option value="rate2">2</option>
+			<option value="rate3">3</option>
+			<option value="rate4">4</option>
+			<option value="rate5">5</option>
+			<option value="rate6">6</option>
+			<option value="rate7">7</option>
+			<option value="rate8">8</option>
+			<option value="rate9">9</option>
+			<option value="rate10">10</option>
+		</select>
+		<input type="text" id="favact" name="favact" placeholder="Your favourite activity that you have done most recently while travelling">
+		<label for="travel">Would you call yourself a traveller?</label>
+		<select name="travel">
+			<option value="yes">Yes</option>
+			<option value="No">No</option>
+		</select>
+		<button id="submit1">Sign Up</button>
+	</div> -->
+</body>
 
-    <div class="footer-container"> 
-        <a id="about-us" href="#"> About Us </a>
-        <a id="how-it-works" href="#"> How it Works </a>
-        
-    </div>
-
-    <script src="../static/js/signup.js"> </script> 
-</body> 
-
-</html>

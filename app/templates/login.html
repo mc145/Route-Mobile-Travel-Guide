@@ -1,51 +1,36 @@
-<!DOCTYPE html> 
-<html> 
+<!DOCTYPE html>
 
-<head> 
+<html>
 
-<title> Login to TGuide! </title>
-<link rel="stylesheet" href="../static/css/login.css"> 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<head>
+    <title>TGuide-Login</title>
+    <link rel="icon" href="../assets/logoicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" corssorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../javascript/system.js"></script>
+    <script src="../static/js/login.js"> </script>
 
-
-</head> 
-
-<body> 
-    <div class="navbar-container"> 
-        <img id="navbar-logo" src="../static/assets/travelwebsitelogo.png">
-        <h1 id="navbar-text"> TGuide </h1> 
-        <a id="navbar-signup"href="/signup"> Sign Up </a>
-        <a id="navbar-home" href="/"> Home </a> 
-        <hr id="navbar-seperator"> 
-    </div> 
-
-    <div class="form-container"> 
-        <form action="" class="login-form"> 
-            <input id="email" type="text" name="email" placeholder="Email"> 
-            <input id="password" type="text" name="password" placeholder="Password"> 
-            <input id="submit" type="submit" value="Submit"> 
-            
-        </form> 
-    </div> 
-
-    <div class="alert-container" id="alert-container"> 
-        <p id="alert-message">Account created!</p> 
-    </div> 
+</head>
 
 
-    <div class="footer-container"> 
-        <a id="about-us" href="#"> About Us </a>
-        <a id="how-it-works" href="#"> How it Works </a>
-        
+<body>
+
+    <div class="loginbox-wrapper">
+        <img id="loginico" src="../assets/logoicon.png">
+        <span id="logintitle">Log In</span>
+        <input type="text" id="usrname" name="usrname" placeholder="Username"><br><br>
+        <input type="text" id="email" name="email" placeholder="Email"><br><br>
+        <input type="password" id="pasword" name="pasword" placeholder="Password"><br><br>
+        <a id="recoverpass" href="../html/recoverpass.html">Forgot your password?</a>
+        <button id="submitdata" value="submit" onclick="window.location.href='../html/menu.html'">Sign In</button>
+        <a id="signup" href="../html/signup.html">Not a member? Sign up!</a>
     </div>
 
-    <script src="../static/js/login.js"> </script>
-</body> 
+</body>
 
 </html>
