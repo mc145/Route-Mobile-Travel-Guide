@@ -1,115 +1,303 @@
+/* start of home.css*/
+
+
+:root{
+    --basecolor: solid white;
+    --hovercolor: rgba(44, 130, 201, 1);
+}
+
+.fade-out {
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+     opacity: 0;
+}
+
+
+.fade-in{
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+     opacity: 1;
+}
+
+
+
 body{
-    margin: 0; 
-    padding: 0; 
-}
-
-.navbar-container{
-    width: 100%; 
-}
-
-#navbar-text{
-    position: absolute; 
-    margin-top: 1.4vh; 
-    left: 90px; 
-    font-family: 'Open Sans', sans-serif;
-    color: black; 
-}
-
-#navbar-signup{
-    margin-right: 30px; 
-    border: 2px black solid; 
-    background-color: rgb(12, 12, 182); 
-    border-radius: 4px; 
-    padding: 8px; 
-}
-
-#navbar-login{
-    border: 2px black solid; 
-    padding: 8px; 
-    border-radius: 4px;  
-    background-color: rgb(12, 12, 182); 
-}
-
-.navbar-container, a{
-    text-decoration: none; 
-    color: white;  
-    float: right; 
-    margin-left: 30px; 
-    margin-top: 5px; 
-    padding-top: 5px; 
-    font-size: 1vw;     
-    font-family: 'Open Sans', sans-serif;
-}
-
-
-#navbar-logo{ 
-    width: 3%;
-    position: absolute; 
-    left: 50px; 
-}
-
-#navbar-seperator{  
-    position: relative; 
-    width: 100%; 
-    top: 20px; 
-}
-
-.navbar-container a:hover{
-    color: grey;  
-}
-
-#welcome-text{
-    position: relative; 
-    top: 50px; 
-    font-family: 'Lato', sans-serif;
-    font-size: 3em; 
-}
-
-#explain-text{
-    font-family: 'Open Sans', sans-serif; 
-    inline-size: 40vw;
-    margin-left: 30vw; 
-    margin-top: 9vh;     
-}
-
-.body-container{
-    text-align: center; 
+    height: 100%;
+    display: flex;
+    background: #9a9b9b;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 
 
-#body-signup{
-    border: black 2px solid; 
-    padding: 10px; 
-    margin: 0; 
+.intropopup-wrapper{
+    border: 5px solid black;
+    z-index: 5;
+    padding: 7vh;
+    width: 60vh;
+    height: 50vh;
+    margin: auto;
+    border-radius: 15px;
+    background: linear-gradient(-45deg,#e66465, #0267b9);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
-    margin-right: 45vw; 
-    margin-top: 10px;  
-    color: black; 
+    justify-content: center;
+    z-index: 2;
 }
 
-#body-signup:hover{
-    color: blue; 
+
+
+
+#introtitle{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 5em;
 }
 
-.footer-container{
-    position: absolute; 
-    bottom: 0; 
-    width: 100%; 
-    height: 10vh; 
-    background-color: rgb(89,89,89); 
+#introdescr{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.7em;
 }
 
-.footer-container a {
-    color: white; 
-    font-family: 'Open Sans', sans-serif; 
-    margin-right: 2vw; 
-    margin-top: 2.5vh; 
+
+#introstart{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2pc;
+    position: relative;
+    top: 10%;
+    border: 5px solid black;
+    background-image: -webkit-linear-gradient(75deg, #007194 50%, transparent 50%);
+    background-image: linear-gradient(75deg, #007194 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 450%;
+    transition: 0.5s;
+    border-radius: 2em;
+    padding: 1em 1em;
+    width: 25vh; 
+    box-shadow: 10px 10px 7px 5px #FFFF;
+    left: center;
+    outline: none;
 }
 
-.footer-container a:hover{
-    color: lightblue; 
+
+
+#introstart:hover{
+    background-position: 0;
+    top: 10.7%;
+    left: 0.5%;
+    box-shadow: 5px 5px 5px 4px #005d778e;
+    text-shadow: 0 0 1px #fff, 0 0 0px #fff, 
+    0 0 20px white, 0 0 20px white, 0 0 5px white;
+    box-shadow: 0 0 10px #005d778e, 0 0 5px #005d778e, 
+    0 0 40px #005d778e, 0 0 35px #005d778e, 0 0 35px #005d778e;
 }
+
+
+
+
+.header1-wrapper{
+    border: 6px solid black;
+    border-radius: 10px;
+    padding: 2vh;
+    width: 90%;
+    height: 10vh;
+    opacity: 0;
+    margin: auto;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    background-image: linear-gradient(60deg, rgb(170, 170, 170), rgb(160, 160, 160));
+    box-shadow: 5px 5px 5px 2px rgba(201, 201, 201, 0.466);
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+#logo{
+    float:left;
+    max-width: 7%;
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+
+
+#headertitle1{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 6em;
+    float: left;
+    position: relative;
+    left: 3%;
+    padding: 1vh 0;
+    vertical-align: center;
+}
+
+
+#login{
+    position: absolute;
+    left: 90%;
+    border: 8px solid black;
+    border-radius: 7px;
+    padding: 0.9% 0.9%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+    transition: 0.5s;
+    box-sizing: border-box;
+    background-image: linear-gradient(60deg, rgb(90, 90, 90) 50%, transparent 50%);
+    background-position: 200%;
+    background-size: 450%;
+    transition: all 0.5s ease-in-out;
+}
+
+#login:hover{
+    background-position: 0;
+}
+
+
+#signup{
+    position: absolute;
+    left: 81%;
+    border: 8px solid black;
+    border-radius: 7px;
+    padding: 0.9% 0.9%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+    transition: 0.5s;
+    box-sizing: border-box;
+    background-image: linear-gradient(60deg, rgb(90, 90, 90) 50%, transparent 50%);
+    background-position: 200%;
+    background-size: 450%;
+    transition: all 0.5s ease-in-out;
+}
+
+#signup:hover{
+    background-position: 0;
+}
+
+.middle-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    align-items: center;
+    z-index: 1;
+    opacity: 0;
+}
+
+#welcome{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 7em;
+}
+
+#tguideinfo{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+}
+
+#signupnow{
+    border: 8px solid black;
+    border-radius: 7px;
+    padding: 1% 1%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    transition: 0.5s;
+    box-sizing: border-box;
+    background-image: linear-gradient(60deg, #0267b9 50%, transparent 50%);
+    background-position: 200%;
+    background-size: 450%;
+    transition: all 0.5s ease-in-out;
+}
+
+#signupnow:hover{
+    background-position: 0;
+}
+
+.botpanel{
+    padding: 2vh;
+    width: 97.67%;
+    height: 9vh;
+    opacity: 0;
+    margin: auto;
+    position: absolute;
+    top: 93.5%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    background-image: linear-gradient(60deg, rgb(44, 44, 44), rgb(44, 44, 44));
+    text-align: center;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+
+
+#contactbut{
+    position: absolute;
+    left: 89%;
+    border-radius: 7px;
+    padding: 0.7% 0.7%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+    transition: 0.5s;
+    box-sizing: border-box;
+    background-image: linear-gradient(60deg, rgb(44, 44, 44) 50%, transparent 50%);
+    background-position: 200%;
+    background-size: 450%;
+    transition: all 0.5s ease-in-out;
+}
+
+#contactbut:hover{
+    background-position: 0;
+}
+
+
+#abtusbut{
+    position: absolute;
+    left: 80%;
+    border-radius: 7px;
+    padding: 0.7% 0.7%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+    transition: 0.5s;
+    box-sizing: border-box;
+    background-image: linear-gradient(60deg, rgb(44, 44, 44) 50%, transparent 50%);
+    background-position: 200%;
+    background-size: 450%;
+    transition: all 0.5s ease-in-out;
+}
+
+#abtusbut:hover{
+    background-position: 0;
+}
+
+
+
 
 
 
