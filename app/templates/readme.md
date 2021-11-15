@@ -1,6 +1,6 @@
 INSTRUCTIONS FOR RUNNING WEB APPLICATION:
 
-Run newhome.html on your web browser.
+Run "run.py" in the main branch. If unable to run it, manually run "new home.html" in ../app/templates 
 
 RECOMMENDATIONS:
 
