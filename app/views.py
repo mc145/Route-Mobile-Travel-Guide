@@ -9,8 +9,8 @@ def index():
     if request.method == 'GET': 
         auth = request.args.get('auth', default='*', type = str) 
         if(check_if_auth_exists(auth)):
-            return render_template('logged.html') 
-        return render_template('home.html')
+            return render_template('menu.html') 
+        return render_template('newhome.html')
 
 
 @app.route('/account', methods=['GET', 'POST']) 
@@ -18,7 +18,7 @@ def account():
 
     auth = request.args.get('auth', default='*', type=str) 
     if(check_if_auth_exists(auth)): 
-        return render_template('account.html') 
+        return render_template('datamanaccount.html') 
 
     if request.method == 'POST': 
         nationality = request.get_json()['nationality'] 
@@ -33,16 +33,16 @@ def account():
 
 
 
-    return render_template('home.html') 
+    return render_template('newhome.html') 
 
 
 @app.route('/trip', methods=['GET', 'POST'])
 def trip():
     auth = request.args.get('auth', default='*', type=str) 
     if(check_if_auth_exists(auth)):
-        return render_template('trip.html')
+        return render_template('travelplan.html')
     
-    return render_template('home.html') 
+    return render_template('newhome.html') 
 
 
 @app.route('/login', methods=['GET', 'POST'])
